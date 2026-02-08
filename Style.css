@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #ffd1dc;
+    color: #333;
+}
+
+header {
+    background-color: #c1e1c1;
+    color: rgb(105, 105, 30);
+    text-align: center;
+    padding: 50px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+}
+/* layout */
+.choice-area {
+    display: flex;
+    flex-direction: column;   /* stack items vertically */
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* small clipart */
+.clipart {
+    width: 250px;
+}
+
+/* YES / NO buttons */
+.YES, .NO {
+    background-color: #ea7b7b;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* hover */
+.YES:hover,
+.NO:hover {
+    background-color: #d25353;
+}
+
+/* YES grows smoothly */
+.YES {
+    transition: transform 0.3s ease;
+}

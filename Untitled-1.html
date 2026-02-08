@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hieeeee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <header>
+        <h1>WILL YOU BE MY VALENTINEEEEEEEEE</h1>
+        <p>Choose wisely (questionable choice btw)</p>
+    </header>
+<div class="choice-area">
+
+    <img id="clipart" src="img1.png" class="clipart">
+
+    <div class="choice-buttons">
+        <button id="yesBtn" class="YES">YESSSSSSSSS</button>
+        <button id="noBtn" class="NO">No</button>
+    </div>
+
+</div>
+
+<script>
+    const yesBtn = document.getElementById("yesBtn");
+    const noBtn = document.getElementById("noBtn");
+    const img = document.getElementById("clipart");
+
+    let size = 16;
+    let padding = 12;
+
+    noBtn.addEventListener("click", () => {
+        img.src = "img2.png";
+
+        size += 4;
+        padding += 4;
+
+        yesBtn.style.fontSize = size + "px";
+        yesBtn.style.padding = padding + "px " + (padding * 2) + "px";
+    });
+
+    yesBtn.addEventListener("click", () => {
+        window.location.href = "yes.html";
+    });
+</script>
+
+</body>
+</html>
