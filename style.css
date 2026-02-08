@@ -29,7 +29,7 @@ footer {
 
 /* small clipart */
 .clipart {
-    width: 6px;
+    width: 250px;
 }
 
 /* YES / NO buttons */
@@ -53,5 +53,6 @@ footer {
 .YES {
     transition: transform 0.3s ease;
 }
+
 
 
